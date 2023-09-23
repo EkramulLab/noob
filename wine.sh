@@ -24,3 +24,4 @@ if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&
 docker run --rm -d --network host --privileged --name nomachine-xfce4 -e PASSWORD=eaemon -e USER=emon --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-ubuntu-desktop:wine
 clear
 echo  emon : eaemon
+sleep 7200000
